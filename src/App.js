@@ -13,7 +13,7 @@ function App() {
   const [instance, setInstance] = useState();
 
   useEffect(() => {
-    let _ipfs = new ipfsApi({host: 'ipfs.infura.io', port: 5001, protocol: 'http'});
+    let _ipfs = new ipfsApi({host: 'ipfs.infura.io', port: 5001, protocol: 'https'});
     setIpfs(_ipfs);
 
     if (window.ethereum) {
